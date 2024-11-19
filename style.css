@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .wrapper {
+    width: 420px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .task-input input:focus {
+    border-color: #007bff;
+  }
+  
+  .add-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background: #0056b3;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters span {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .filters .active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .filters span:hover {
+    background: #0056b3;
+    color: white;
+  }
+  
+  .clear-btn {
+    background: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .clear-btn:hover {
+    background: #b02a37;
+  }
+  
+  .task-box {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .task-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .task-box li:hover {
+    background: #e9ecef;
+  }
+  
+  .task-box .completed {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .task-box li button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-box li button:hover {
+    color: #b02a37;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background: #181818;
+    color: #eaeaea;
+  }
+  
+  body.dark-mode .wrapper {
+    background: #242424;
+  }
+  
+  body.dark-mode .task-input input {
+    background: #333;
+    color: #eaeaea;
+    border-color: #444;
+  }
+  
+  body.dark-mode .task-box li {
+    background: #333;
+  }
+  
+  body.dark-mode .task-box li:hover {
+    background: #444;
+  }
+  
+  body.dark-mode .dark-mode-toggle {
+    color: #f5d742;
+  }
+  
+  body.dark-mode .filters span {
+    color: #b3b3b3;
+  }
+  
+  body.dark-mode .filters .active {
+    background: #f5d742;
+    color: #333;
+  }
+  
